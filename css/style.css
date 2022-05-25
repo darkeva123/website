@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Quicksand:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Overpass', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+    margin: auto;
+    max-width: 1000px;
+    padding: 34px 24px;
+}
+
+.l-heading {
+    font-size: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 27px;
+    background: #3b99fc;
+    font: 16px;
+    border-radius: 5px;
+}
+
+.btn-light {
+    background: #fff;
+    padding: 10px 27px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: #3b99fc 2px solid;
+}
+
+/* NAVBAR */
+#navbar {
+    position: sticky;
+    top: 0;
+    border-bottom: rgba(241, 232, 232, 0.703) solid 2px;
+    background: #fff;
+}
+
+
+#navbar > .container {
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 19px 8px;
+}
+
+#navbar > .container .logo {
+    display: flex;
+}
+
+#navbar > .container .logo img {
+    width: 2.5rem;
+}
+
+#navbar a {
+    color: #333;
+    margin: 0 0.25rem;
+}
+
+#navbar h1 {
+    font-size: 20px;
+}
+
+#navbar > .container > a {
+    color: #fff;
+}
+
+#navbar > .container > a:hover {
+    background: #fff;
+    color: #3b99fc;
+    border: #3b99fc solid 2px;
+}
+
+/* Section: LINK */
+#link {
+    padding: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+}
+
+#link .link-content {
+    flex: 2;
+    margin-right: 3rem;
+    padding-right: 7rem;
+}
+
+#link img {
+    height: 150px;
+    width: 400px;
+    flex: 1;
+}
+
+/* Section: About */
+#about,
+#synch {
+    background: #262626;
+    color: #fff;
+}
+
+#about h1 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#about .about-content,
+#synch .synch-content {
+    display: flex;
+    background: #fff;
+    color: #262626;
+    border-radius: 5px;
+}
+
+#about .about-content a {
+    color: #262626;
+}
+
+#about .about-content .wallet, 
+#about .about-content .wallets {
+    flex: 1;
+    padding: 3rem 2rem;
+}
+
+
+/* Section: Sychronization */
+#synch .container > h1 {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+#synch .container {
+    margin-bottom: 3rem;
+}
+
+#synch .synch-content {
+    margin-bottom: 3rem;
+}
+
+#synch .synch-content a {
+    color: #fff;
+}
+
+#synch .synch-content a:hover {
+    background: #fff;
+    color: #3b99fc;
+    border: #3b99fc 2px solid;
+}
+
+#synch .synch-content .validation,
+#synch .synch-content .synchronization,
+#synch .synch-content .recover {
+    flex: 1;
+    padding: 3rem 2rem;
+}
+
+#synch .synch-content h1 {
+    color: #3b99fc;
+}
+
+#synch .synch-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Section: Get */
+#get {
+    margin-top: 7rem;
+    background: #262626;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#get h1 {
+    margin-bottom: 1.5rem;
+}
+
+#get a {
+    color: #fff;
+    border: #fff 4px solid;
+    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+}
+
+#get a:hover {
+    background: #fff;
+    color: #3b99fc;
+}
+
+/* Footer */
+#main-footer {
+    border-top: rgba(181, 163, 163, 0.296) solid 1px;
+}
+
+#main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+#main-footer .social {
+    display: flex;
+}
+
+#main-footer .social i {
+    margin-right: 1.5rem;
+    color: #333;
+}
+
+#main-footer p {
+    font-size: small;
+}
+
+
+/* Section: SecuredSwap */
+#secured,
+#wallet {
+    text-align: center;
+}
+
+#secured img {
+    width: 100px;
+    height: 61.66px;
+}
+
+#secured .container {
+    margin-top: -1rem;
+}
+
+#secured p {
+    padding: 0 10rem;
+    line-height: 1.6;
+}
+
+#secured .buttons {
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 16rem;
+}
+
+#secured .buttons a {
+    margin: 0.7rem;
+    color: #3b99fc;
+}
+
+#secured .buttons .btn {
+    color: #fff;
+}
+
+
+/* Wallets */
+#wallet {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#wallet .container > img {
+    width: 100%;
+    max-width: 120px;
+    min-width: 60px
+}
+
+#wallet .container > h1 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: rgb(88, 112, 135);
+    padding: 0 4rem;
+}
+
+#wallet p {
+    font-size: 1.1rem;
+    color: rgb(88, 112, 135);
+    margin-bottom: 1.7rem;
+}
+
+#wallet .wallets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#wallet .wallets img {
+    border-radius: 50%;
+    width: 220px;
+    padding: 1.7rem;
+}
+
+#wallet .wallets h3 {
+    color: rgb(88, 112, 135);
+}
+
+.git {
+    margin-top: 3.5rem;
+}
